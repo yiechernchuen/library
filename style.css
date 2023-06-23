@@ -136,8 +136,9 @@ input {
     background-color: rgb(206, 206, 206);
 }
 
-input:focus {
+input:focus-visible {
     background-color: antiquewhite;
+    outline: none;
 }
 
 .popUpButton {
@@ -213,6 +214,16 @@ input:checked + .slider:before {
     padding: 4px;
     border-radius: 5px;
 }
+
+.form input:invalid {
+    outline: 1px solid #900;
+    background-color: #fdd;
+    border: none;
+}
+.form input:invalid:focus-visible {
+    outline: 1px solid #900;
+}
+
 .footer {
     height: 30px;
     background-color: #34495e;
